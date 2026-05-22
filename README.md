@@ -1,0 +1,1 @@
+A full-stack MERN application featuring secure authentication, SOS emergency alerts, and real-time location sharing to enhance user safety. Built with responsive UI, REST APIs, and MongoDB integration for efficient data management.
