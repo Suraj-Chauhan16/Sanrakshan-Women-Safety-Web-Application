@@ -1,0 +1,14 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Shield background -->
+  <path d="M 100 20 L 160 50 L 160 110 C 160 150 100 180 100 180 C 100 180 40 150 40 110 L 40 50 Z" fill="#FF6B9D" stroke="#fff" stroke-width="2"/>
+  
+  <!-- Inner shield -->
+  <path d="M 100 30 L 155 58 L 155 110 C 155 145 100 172 100 172 C 100 172 45 145 45 110 L 45 58 Z" fill="#FF5E89" stroke="none"/>
+  
+  <!-- Heart symbol -->
+  <path d="M 100 80 C 100 75 96 70 90 70 C 86 70 82 74 80 78 C 78 74 74 70 70 70 C 64 70 60 75 60 80 C 60 95 100 120 100 120 C 100 120 140 95 140 80 C 140 75 136 70 130 70 C 126 70 122 74 120 78 C 118 74 114 70 110 70 C 104 70 100 75 100 80 Z" fill="white"/>
+  
+  <!-- Text banner -->
+  <rect x="30" y="150" width="140" height="30" fill="white" rx="5"/>
+  <text x="100" y="168" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#FF5E89">SANRAKSHAN</text>
+</svg>

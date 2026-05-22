@@ -1,0 +1,436 @@
+/* SOS Page Styles */
+
+.sos-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #fff5f7 0%, #ffe0e6 100%);
+  padding: 40px 20px;
+}
+
+.sos-page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.sos-page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sos-page-header h1 {
+  font-size: 48px;
+  color: #ff0000;
+  margin: 0 0 10px 0;
+  text-shadow: 0 2px 4px rgba(255, 0, 0, 0.2);
+}
+
+.sos-page-tagline {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+/* Alert Message */
+.alert {
+  padding: 16px 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 600;
+  animation: slideIn 0.3s ease;
+}
+
+.alert-icon {
+  font-size: 24px;
+}
+
+.alert-success {
+  background: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+}
+
+.alert-error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main Content - Two Column Layout */
+.sos-page-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* SOS Sections */
+.sos-section {
+  background: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #667eea;
+}
+
+.send-alert-section {
+  border-top-color: #ff0000;
+}
+
+.emergency-section {
+  border-top-color: #667eea;
+}
+
+.section-icon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.sos-section h2 {
+  color: #333;
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.section-description {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Location Info */
+.location-info {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.btn-get-location {
+  width: 100%;
+  padding: 12px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-bottom: 8px;
+}
+
+.btn-get-location:hover {
+  background: #764ba2;
+  transform: translateY(-2px);
+}
+
+.location-details {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+}
+
+/* Map Container */
+.map-container {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 300px;
+}
+
+.map-container .leaflet-container {
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Send Alert Button */
+.btn-sos-send {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(255, 0, 0, 0.3);
+}
+
+.btn-sos-send:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.5);
+}
+
+.btn-sos-send:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Tips & Info */
+.alert-tips,
+.emergency-info {
+  background: #fff3cd;
+  border-left: 4px solid #ffc107;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 20px;
+}
+
+.alert-tips h4,
+.emergency-info h4 {
+  color: #856404;
+  margin: 0 0 10px 0;
+  font-size: 14px;
+}
+
+.alert-tips ul,
+.emergency-info ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.alert-tips li,
+.emergency-info li {
+  color: #856404;
+  font-size: 13px;
+  margin-bottom: 8px;
+  padding-left: 0;
+}
+
+.alert-tips li:before,
+.emergency-info li:before {
+  content: '✓ ';
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+/* Country Selector */
+.country-selector-container {
+  margin-bottom: 20px;
+}
+
+.country-selector-container label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.country-select {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.country-select:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+/* Emergency Numbers Container */
+.emergency-numbers-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 25px;
+}
+
+.emergency-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 18px 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  font-weight: 600;
+}
+
+.emergency-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+}
+
+.emergency-type {
+  font-size: 12px;
+  opacity: 0.9;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.emergency-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.tap-to-call {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/* Safety Tips Section */
+.sos-safety-tips {
+  background: white;
+  border-radius: 12px;
+  padding: 40px 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sos-safety-tips h3 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin: 0 0 30px 0;
+}
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.tip-card {
+  background: linear-gradient(135deg, #f5f7fa 0%, #e9ecef 100%);
+  border-radius: 8px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.tip-card:hover {
+  transform: translateY(-5px);
+  border-color: #667eea;
+  box-shadow: 0 6px 15px rgba(102, 126, 234, 0.2);
+}
+
+.tip-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.tip-card h4 {
+  color: #333;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+}
+
+.tip-card p {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Back Button */
+.btn-back {
+  display: block;
+  margin: 30px auto;
+  padding: 12px 30px;
+  background: #f0f0f0;
+  color: #333;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-back:hover {
+  background: #e8e8e8;
+  border-color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .sos-page {
+    padding: 20px 15px;
+  }
+
+  .sos-page-header h1 {
+    font-size: 36px;
+  }
+
+  .sos-page-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .sos-section {
+    padding: 20px;
+  }
+
+  .emergency-numbers-container {
+    grid-template-columns: 1fr;
+  }
+
+  .tips-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .sos-safety-tips {
+    padding: 25px 20px;
+  }
+
+  .btn-sos-send {
+    padding: 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sos-page-header h1 {
+    font-size: 28px;
+  }
+
+  .sos-section {
+    padding: 18px;
+  }
+
+  .btn-sos-send {
+    padding: 14px;
+    font-size: 13px;
+  }
+
+  .emergency-btn {
+    padding: 14px 8px;
+    font-size: 12px;
+  }
+
+  .emergency-number {
+    font-size: 16px;
+  }
+}
